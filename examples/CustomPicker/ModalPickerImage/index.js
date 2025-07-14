@@ -3,28 +3,10 @@
 import React from 'react';
 import { View, Modal, Text, ScrollView, TouchableOpacity, Image } from 'react-native';
 
-import PropTypes from 'prop-types';
-
 import styles from './style';
 import BaseComponent from './BaseComponent';
 
 let componentIndex = 0;
-
-const propTypes = {
-  data: PropTypes.array,
-  onChange: PropTypes.func,
-  initValue: PropTypes.string,
-  style: View.propTypes.style,
-  selectStyle: View.propTypes.style,
-  optionStyle: View.propTypes.style,
-  optionTextStyle: Text.propTypes.style,
-  sectionStyle: View.propTypes.style,
-  sectionTextStyle: Text.propTypes.style,
-  cancelStyle: View.propTypes.style,
-  cancelTextStyle: Text.propTypes.style,
-  overlayStyle: View.propTypes.style,
-  cancelText: PropTypes.string,
-};
 
 const defaultProps = {
   data: [],
@@ -198,5 +180,4 @@ export default class ModalPicker extends BaseComponent {
   }
 }
 
-ModalPicker.propTypes = propTypes;
 ModalPicker.defaultProps = defaultProps;
